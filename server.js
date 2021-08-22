@@ -1,4 +1,6 @@
 require('dotenv').config();
+// Here we're using @babel API which going to convert ECMA2015 + code into a backwards compatible version of Javascript in current and older browsers.
+// Using @babel/register all subsequent files required by node with the extensions (.es6, .es, .jsx, .mjs, and .js) will be transformed by Babel.
 require('@babel/register');
 const express = require('express');
 // const bodyParser = require('body-parser');
